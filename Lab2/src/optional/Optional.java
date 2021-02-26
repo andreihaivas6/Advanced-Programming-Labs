@@ -28,8 +28,9 @@ public class Optional {
         Solution solution = new Solution(problem);
         solution.solve();
 
-        for(int[] line : solution.getUnits())
+        for(int[] line : solution.getUnits()) {
             System.out.println(Arrays.toString(line));
+        }
         System.out.println("Total cost: " + solution.getTotalCost());
     }
 }

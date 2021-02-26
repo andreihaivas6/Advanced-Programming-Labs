@@ -65,16 +65,20 @@ public class Problem {
     }
 
     public void addSource(Source s) {
-        for (Source source : sources) // verificam existenta sursei
-            if (source.equals(s))
+        for (Source source : sources) { // verificam existenta sursei
+            if (source.equals(s)) {
                 return;
+            }
+        }
         sources.add(s);
     }
 
     public void addDestination(Destination d) {
-        for (Destination destination : destinations) // verificam existenta destinatiei
-            if (destination.equals(d))
+        for (Destination destination : destinations) { // verificam existenta destinatiei
+            if (destination.equals(d)) {
                 return;
+            }
+        }
         destinations.add(d);
     }
 }

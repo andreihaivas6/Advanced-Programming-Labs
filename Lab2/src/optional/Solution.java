@@ -8,10 +8,10 @@ public class Solution extends Problem{
         - units[i][j] = numarul de unitati trasnportate de la sursa i la destinatia j
     */
 
-    public Solution(Problem p){
-        super.setSources(p.getSources());
-        super.setDestinations(p.getDestinations());
-        super.setCosts(p.getCosts());
+    public Solution(Problem problem){
+        super.setSources(problem.getSources());
+        super.setDestinations(problem.getDestinations());
+        super.setCosts(problem.getCosts());
     }
 
     public void setTotalCost(int totalCost) {
@@ -45,10 +45,12 @@ public class Solution extends Problem{
 
         while (i < super.getSources().size() && j < super.getDestinations().size()) {
             // daca spatiul sau cererea sunt 0, trecem la urmatoarea sursa/destinatie
-            if(supply == 0)
+            if(supply == 0) {
                 supply = super.getSource(i).getSupply();
-            if(demand == 0)
+            }
+            if(demand == 0) {
                 demand = super.getDestination(j).getDemand();
+            }
 
             // daca destinatia cere mai putin decat incape -> scadem din supply si verificam si urmatoarea destinatie
             if (supply > demand) {
@@ -75,7 +77,5 @@ public class Solution extends Problem{
                 j++;
             }
         }
-
     }
-
 }
