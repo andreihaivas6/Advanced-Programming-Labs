@@ -99,12 +99,22 @@ public class Solution extends Problem {
         }
 
         while(supplyLeft > 0) { // cat timp mai avem de unde trimite
-            int[] result = choosePenalty();
+            int[] result;
+            int[] result1 = penalty(true, super.getDestinations().size(), super.getSources().size());
+            int[] result2 = penalty(false, super.getSources().size(), super.getDestinations().size());
+
+            // alege penalty-ul dupa diferenta in modul (si daca e aceeasi, alege dupa costul minim)
+            if (result1[3] == result2[3]) {
+                result = (result1[2] < result2[2]) ? result1 : result2;
+            }
+            else {
+                result = (result1[3] > result2[3]) ? result2 : result1;
+            }
+
             int index0 = result[0];
             int index1 = result[1];
 
             // minimul dintre supply si demand de la pozitia (index0, index1)
-
             int supply = super.sources.get(index0).getSupply();
             int demand = super.destinations.get(index1).getDemand();
             int minim = Integer.min(supply, demand);
@@ -175,26 +185,5 @@ public class Solution extends Problem {
             result[1] = indexMaxDiff;
         }
         return result;
-
     }
-
-    // alege penalty-ul dupa diferenta in modul (si daca e aceeasi, alege dupa costul minim)
-    public int[] choosePenalty() {
-        int[] result1 = penalty(true, super.getDestinations().size(), super.getSources().size());
-        int[] result2 = penalty(false, super.getSources().size(), super.getDestinations().size());
-
-        if (result1[3] == result2[3]) {
-            if(result1[2] < result2[2]) {
-                return result1;
-            }
-            return result2;
-        }
-        else {
-            if (result1[3] > result2[3]) {
-                return result2;
-            }
-            return result1;
-        }
-    }
-
 }
