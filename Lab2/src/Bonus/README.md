@@ -1,0 +1,1 @@
+Functia ce rezolva bonusul e in clasa Solution, iar instante mari am generat in clasa Bonus (in main).
