@@ -145,7 +145,8 @@ public class Solution extends Problem {
                 }
             }
         }
-        int[] ret = new int[] {(minim2 - minim1), minim1, minPoz};
+        int diferenta = minim2 - minim1;
+        int[] ret = new int[] {diferenta, minim1, minPoz};
         return ret;
     }
 
@@ -157,7 +158,9 @@ public class Solution extends Problem {
         for (int i = 0; i < length1; ++i) {
             if((isRow && !rowCut[i]) || (!isRow && !colCut[i])) { // verificam daca linia/coloana a fost taiata
                 int[] result = difference(isRow, i, length2);
-                if (result[0] > maxDiff) { // daca gasim o diferenta mai mare
+                int differenta = result[0];
+
+                if (differenta > maxDiff) { // daca gasim o diferenta mai mare
                     maxDiff = result[0];
                     minCost = result[1];
                     indexMaxDiff = i;
@@ -166,12 +169,12 @@ public class Solution extends Problem {
             }
         }
 
-        int[] res = new int[] {indexMaxDiff, indexMinCost, minCost, maxDiff};
+        int[] result = new int[] {indexMaxDiff, indexMinCost, minCost, maxDiff};
         if (!isRow) { // daca nu suntem pe linie, interschimbam indexii
-            res[0] = indexMinCost;
-            res[1] = indexMaxDiff;
+            result[0] = indexMinCost;
+            result[1] = indexMaxDiff;
         }
-        return res;
+        return result;
 
     }
 
