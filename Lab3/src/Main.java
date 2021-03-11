@@ -1,4 +1,3 @@
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -28,8 +27,6 @@ public class Main {
 
         church2.putCost(restaurant1, 20);
 
-        church2.putCost(hotel1, 10); // TEST eliminare arce ce nu respecta lista preferintelor
-
         city.addLocation(hotel1);
         city.addLocation(museum1);
         city.addLocation(museum2);
@@ -52,5 +49,9 @@ public class Main {
         System.out.println(plan1.getCity().toString());
 
         plan1.solve(hotel1, restaurant1);
+
+        Bonus bonus = new Bonus(city,
+                new ArrayList<>(Arrays.asList(hotel1, museum1, museum2, church1, church2, restaurant1)));
+        bonus.solveBonus();
     }
 }

@@ -1,5 +1,3 @@
-import java.util.Comparator;
-
 public class School implements Comparable<School> {
     private String name;
     private int capacity;
