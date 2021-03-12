@@ -14,7 +14,10 @@ public class Bonus extends TravelPlan {
 
     public void createMatrix() {
         int dimensiune = super.getCity().getNodes().size();
-        graf = new int[100][100];
+        graf = new int[dimensiune + 1][dimensiune + 1];
+        for(int[] line : graf){
+            Arrays.fill(line, Integer.MAX_VALUE);
+        }
 
         for (Location location : super.getCity().getNodes()) {
             int i = Integer.parseInt(location.getName().substring(1));
