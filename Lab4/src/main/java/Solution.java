@@ -32,6 +32,47 @@ public class Solution {
         }
     }
 
+    public void solveBonus() {
+        Map<School, List<Student>> acceptedList = new HashMap<>();
+        for (School school : problem.getSchoolsPreferences().keySet()) {
+            acceptedList.put(school, new ArrayList<>());
+        }
+
+        List<Student> freeStudents = new ArrayList<>(problem.getStudentsPreferences().keySet());
+        for (int i = 0; i < freeStudents.size(); ++i) {
+            Student student = freeStudents.get(i);
+            for (School school : problem.getStudentsPreferences().get(student)) {
+                if (acceptedList.get(school).size() < school.getCapacity()) { // daca mai e loc in scoala
+                    acceptedList.get(school).add(student);
+                    break;
+                } else { // daca lista scolii e deja plina
+                    List<Student> schoolPreference = problem.getSchoolsPreferences().get(school);
+
+                    // verificam daca studentul curent e mai bun decat cel mai slab din lista (si ii inlocuim)
+                    for (int j = schoolPreference.size() - 1; j >= 0; --j) {
+                        //schoolPreference.get(j);
+                        if (schoolPreference.get(j).equals(student)) {
+                            break;
+                        } else if (acceptedList.get(school).contains(schoolPreference.get(j))) {
+                            freeStudents.add(schoolPreference.get(j));
+                            int index = acceptedList.get(school).indexOf(schoolPreference.get(j));
+                            acceptedList.get(school).set(index, student);
+//                            schoolPreference.set(j, student);
+//                            i--;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        for (School school : acceptedList.keySet()) {
+            for (Student student : acceptedList.get(school)) {
+                result.put(student, school);
+            }
+        }
+    }
+
     public Problem getProblem() {
         return problem;
     }

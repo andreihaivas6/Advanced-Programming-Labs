@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException {
         Student[] students = IntStream.rangeClosed(0, 3)
                 .mapToObj(i -> new Student("S" + i))
                 .toArray(Student[]::new);
@@ -14,13 +14,13 @@ public class Main {
                 .toArray(School[]::new);
         schools[0].setCapacity(1);
 
-        Faker faker = new Faker();
-        for(Student student : students){
-            student.setName(faker.name().fullName());
-        }
-        for(School school : schools){
-            school.setName(faker.company().name() + " High School");
-        }
+//        Faker faker = new Faker();
+//        for(Student student : students){
+//            student.setName(faker.name().fullName());
+//        }
+//        for(School school : schools){
+//            school.setName(faker.company().name() + " High School");
+//        }
 
         List<Student> studentList = new LinkedList<>(Arrays.asList(students));
         studentList.sort(new Comparator<Student>() {
@@ -73,7 +73,7 @@ public class Main {
                 .filter(school -> schoolsPreferences.get(school).get(0) == topStudent)
                 .forEach(System.out::println);
 
-//        Am folosit Faker-ul mai sus (inainte de a creea noi obiecte).
+//        Am folosit Faker-ul mai sus (inainte de a creea noi obiecte) pentru a avea peste tot aceleasi nume.
 //
 //        Faker faker = new Faker();
 //        for(Student student : students){
@@ -87,10 +87,24 @@ public class Main {
         for(Student student : students){
             student.setMark((int)(Math.random() * 10) + 1);
         }
+
         Problem problem = new Problem(studentsPreferences, schoolsPreferences);
         Solution solution = new Solution(problem);
         solution.solve();
         System.out.println("\nMatching: " + solution);
 
+        Arrays.stream(schools).forEach(x -> x.setCapacity(2));
+        schools[0].setCapacity(1);
+
+        solution.solveBonus();
+        System.out.println("\nStable matching: " + solution);
+        /*
+            Daca problema SAP ar fi cu legaturi ("ties") atunci va avea mai multe solutii,
+            deoarece exista licee ce au prioritate egala si unui student ii va putea fi atribuit oricare scoala.
+
+            Totusi, o anumita alegere a unui liceu pentru un student ar putea (sau nu) sa impiedice alt student
+            de a intra in acea scoala. Daca aceasta ultima scoala este singura alegere pentru al doilea student,
+            atunci vom avea solutii de dimensiuni diferite.
+         */
     }
 }
