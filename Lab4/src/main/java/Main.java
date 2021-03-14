@@ -1,3 +1,5 @@
+import com.github.javafaker.Faker;
+
 import java.util.*;
 import java.util.stream.IntStream;
 
@@ -46,5 +48,40 @@ public class Main {
         for (Map.Entry<School, List<Student>> pair :schoolsPreferences.entrySet()) {
             System.out.println(pair.getKey() + ": " + pair.getValue().toString());
         }
+//        for(School school : schoolsPreferences.keySet()){
+//            System.out.println(school + ": " + schoolsPreferences.get(school));
+//        }
+
+        // Optional
+        List <School> scoli = Arrays.asList(schools[0], schools[1]);
+        System.out.println("\nStudentii care accepta ca scoli: " + scoli);
+        studentList.stream()
+                .filter(student -> studentsPreferences.get(student).containsAll(scoli))
+                .forEach(System.out::println);
+
+        Student topStudent = students[0];
+        System.out.println("\nScolile care au ca prima preferinta pe: " + topStudent);
+        schoolSet.stream()
+                .filter(school -> schoolsPreferences.get(school).get(0) == topStudent)
+                .forEach(System.out::println);
+
+
+        Faker faker = new Faker();
+        for(Student student : students){
+            student.setName(faker.name().fullName());
+        }
+        for(School school : schools){
+            school.setName(faker.company().name() + " High School");
+        }
+
+
+        for(Student student : students){
+            student.setMark((int)(Math.random() * 10) + 1);
+        }
+        Problem problem = new Problem(studentsPreferences, schoolsPreferences);
+        Solution solution = new Solution(problem);
+        solution.solve();
+        System.out.println("\nMatching: " + solution);
+
     }
 }
