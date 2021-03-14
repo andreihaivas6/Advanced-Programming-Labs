@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class Problem {
     private Map<Student, List<School>> studentsPreferences;
-    private Map<School, List <Student>> schoolsPreferences;
+    private Map<School, List<Student>> schoolsPreferences;
 
     public Problem(Map<Student, List<School>> studentsPreferences, Map<School, List<Student>> schoolsPreferences) {
         this.studentsPreferences = studentsPreferences;

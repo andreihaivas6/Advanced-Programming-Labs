@@ -14,6 +14,14 @@ public class Main {
                 .toArray(School[]::new);
         schools[0].setCapacity(1);
 
+        Faker faker = new Faker();
+        for(Student student : students){
+            student.setName(faker.name().fullName());
+        }
+        for(School school : schools){
+            school.setName(faker.company().name() + " High School");
+        }
+
         List<Student> studentList = new LinkedList<>(Arrays.asList(students));
         studentList.sort(new Comparator<Student>() {
             @Override
@@ -65,14 +73,15 @@ public class Main {
                 .filter(school -> schoolsPreferences.get(school).get(0) == topStudent)
                 .forEach(System.out::println);
 
-
-        Faker faker = new Faker();
-        for(Student student : students){
-            student.setName(faker.name().fullName());
-        }
-        for(School school : schools){
-            school.setName(faker.company().name() + " High School");
-        }
+//        Am folosit Faker-ul mai sus (inainte de a creea noi obiecte).
+//
+//        Faker faker = new Faker();
+//        for(Student student : students){
+//            student.setName(faker.name().fullName());
+//        }
+//        for(School school : schools){
+//            school.setName(faker.company().name() + " High School");
+//        }
 
 
         for(Student student : students){

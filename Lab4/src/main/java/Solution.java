@@ -22,7 +22,8 @@ public class Solution {
 
         for (Student student : studentsOrdered) {
             for (School school : problem.getStudentsPreferences().get(student)) {
-                if(school.getCapacity() > 0){
+                // verificam sa fie loc in scoala, si scoala sa il vrea pe student
+                if (school.getCapacity() > 0 && problem.getSchoolsPreferences().get(school).contains(student)) {
                     school.setCapacity(school.getCapacity() - 1);
                     result.put(student, school);
                     break;
@@ -50,7 +51,7 @@ public class Solution {
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder("Solution{\n");
-        for(Student student : result.keySet()){
+        for (Student student : result.keySet()) {
             s.append(student).append(" = ").append(result.get(student)).append('\n');
         }
         s.append("}");
