@@ -50,15 +50,12 @@ public class Solution {
 
                     // verificam daca studentul curent e mai bun decat cel mai slab din lista (si ii inlocuim)
                     for (int j = schoolPreference.size() - 1; j >= 0; --j) {
-                        //schoolPreference.get(j);
                         if (schoolPreference.get(j).equals(student)) {
                             break;
                         } else if (acceptedList.get(school).contains(schoolPreference.get(j))) {
                             freeStudents.add(schoolPreference.get(j));
                             int index = acceptedList.get(school).indexOf(schoolPreference.get(j));
                             acceptedList.get(school).set(index, student);
-//                            schoolPreference.set(j, student);
-//                            i--;
                             break;
                         }
                     }
