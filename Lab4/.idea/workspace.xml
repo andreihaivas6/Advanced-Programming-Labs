@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a6bd708-6462-4611-99fa-6de51b2c84b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -108,7 +107,11 @@
       <workItem from="1615740822930" duration="8352000" />
       <workItem from="1615753990247" duration="9070000" />
       <workItem from="1615820443055" duration="449000" />
-      <workItem from="1615820951438" duration="668000" />
+      <workItem from="1615820951438" duration="1838000" />
+      <workItem from="1616072595013" duration="901000" />
+      <workItem from="1616095533109" duration="17000" />
+      <workItem from="1616095717017" duration="78000" />
+      <workItem from="1616097237897" duration="40000" />
     </task>
     <servers />
   </component>
