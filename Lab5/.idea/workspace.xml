@@ -4,45 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff15def1-2e5a-4dd9-a68a-d7a6df514f92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Catalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InvalidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Song.java" afterDir="false" />
+    <list default="true" id="d5157a0a-762b-40da-a1a1-e271be1b8ddc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab5-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Manifest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AddCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ListCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LoadCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PlayCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReportCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SaveCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab5/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab5/Catalog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab5/InvalidException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab5/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab5/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab5/Song.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catalog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InvalidException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Song.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Catalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="4" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1pyo7V2pia2pxkWZ29ij541fu5f" />
+  <component name="ProjectId" id="1pzrOpc4sj9JhEEBMUkXqtU0tSd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -57,26 +53,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab4" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Lab5" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,12 +76,26 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ff15def1-2e5a-4dd9-a68a-d7a6df514f92" name="Default Changelist" comment="" />
-      <created>1616164525852</created>
+      <changelist id="d5157a0a-762b-40da-a1a1-e271be1b8ddc" name="Default Changelist" comment="" />
+      <created>1616196731856</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1616164525852</updated>
-      <workItem from="1616164527807" duration="335000" />
+      <updated>1616196731856</updated>
+      <workItem from="1616196734559" duration="139000" />
+      <workItem from="1616243890386" duration="52000" />
+      <workItem from="1616270473580" duration="3342000" />
+      <workItem from="1616274204025" duration="267000" />
+      <workItem from="1616274492768" duration="537000" />
+      <workItem from="1616275046854" duration="363000" />
+      <workItem from="1616275448466" duration="173000" />
+      <workItem from="1616275638270" duration="273000" />
+      <workItem from="1616275936073" duration="132000" />
+      <workItem from="1616276091789" duration="893000" />
+      <workItem from="1616277011959" duration="127000" />
+      <workItem from="1616277254606" duration="18000" />
+      <workItem from="1616277291832" duration="66000" />
+      <workItem from="1616277370181" duration="1004000" />
+      <workItem from="1616278562817" duration="144000" />
     </task>
     <servers />
   </component>
@@ -112,6 +112,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

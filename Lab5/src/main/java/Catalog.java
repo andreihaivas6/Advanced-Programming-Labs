@@ -20,25 +20,17 @@ public class Catalog implements Serializable {
         System.out.println(this.toString());
     }
 
-    @Override
-    public String toString() {
-        return "Catalog{" +
-                "name='" + name + '\'' +
-                ", \nitems=" + items +
-                '}';
-    }
-
-    public void play(Item itemToOpen) throws Exception {
+    public void play (String nameOfItemToOpen) throws Exception {
 //        items.stream().map(item -> item.equals(itemToOpen))
 //                .findFirst().orElseThrow(() -> new RuntimeException("Item-ul nu exista."));
 
         for (Item item : items) {
-            if (item.equals(itemToOpen)) {
+            if (item.getName().equals(nameOfItemToOpen)) {
                 if (!Desktop.isDesktopSupported()) {
                     // RuntimeException nu are nevoie de throws Exception
                     throw new RuntimeException("Desktop nu este suportat de sistem.");
                 }
-                File file = new File(itemToOpen.getPath());
+                File file = new File(item.getPath());
                 Desktop.getDesktop().open(file);
                 return;
             }
@@ -47,8 +39,8 @@ public class Catalog implements Serializable {
         throw new FileNotFoundException("Item-ul nu exista.");
     }
 
-    public void save() {
-        try (FileOutputStream fileOut = new FileOutputStream("catalog.ser");
+    public void save(String path) {
+        try (FileOutputStream fileOut = new FileOutputStream(path);
              ObjectOutputStream out = new ObjectOutputStream(fileOut);) {
             out.writeObject(this);
 //            out.close();
@@ -60,7 +52,7 @@ public class Catalog implements Serializable {
 
     public void load(String path) {
         Item.tryPath(path);
-        try (FileInputStream fileIn = new FileInputStream("catalog.ser");
+        try (FileInputStream fileIn = new FileInputStream(path);
             ObjectInputStream in = new ObjectInputStream(fileIn)) {
             // this = catalog; !!!
             Catalog catalog = (Catalog) in.readObject();
@@ -70,6 +62,14 @@ public class Catalog implements Serializable {
         } catch (IOException | ClassNotFoundException exception) {
             exception.printStackTrace();
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Catalog{" +
+                "name='" + name + '\'' +
+                ", \nitems=" + items +
+                '}';
     }
 
 
