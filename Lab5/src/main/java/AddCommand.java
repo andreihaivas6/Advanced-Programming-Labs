@@ -18,9 +18,9 @@ public class AddCommand extends Command {
     public void run(Catalog catalog) throws Exception {
         List<String> arg = super.getArguments();
         if(super.getArguments().get(0).equals("Song")) {
-            catalog.add(new Song(arg.get(1), arg.get(2), arg.get(3)));
+            catalog.getItems().add(new Song(arg.get(1), arg.get(2), arg.get(3)));
         } else {
-            catalog.add(new Book(arg.get(1), arg.get(2), arg.get(3), Integer.parseInt(arg.get(4))));
+            catalog.getItems().add(new Book(arg.get(1), arg.get(2), arg.get(3), Integer.parseInt(arg.get(4))));
         }
     }
 }

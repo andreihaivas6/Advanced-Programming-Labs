@@ -16,7 +16,8 @@
     <h3>Lista elemente:</h3>
     <ul>
         <#list items as item>
-            <li> ${item_index + 1}. ${item} </li>
+            <fieldset> <legend> Item no. ${item_index + 1}</legend>
+                <li>   ${item} </li> </fieldset>
         </#list>
     </ul>
 </body>

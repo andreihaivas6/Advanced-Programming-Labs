@@ -15,6 +15,6 @@ public class ListCommand extends Command{
 
     @Override
     public void run(Catalog catalog) {
-        catalog.list();
+        System.out.println(catalog);
     }
 }

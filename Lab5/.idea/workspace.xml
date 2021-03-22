@@ -5,25 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5157a0a-762b-40da-a1a1-e271be1b8ddc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab5-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Manifest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AddCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ListCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LoadCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PlayCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReportCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SaveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AddCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoadCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlayCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SaveCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Lab5-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab5-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AddCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AddCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Catalog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ListCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ListCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoadCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoadCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PlayCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PlayCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SaveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SaveCommand.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +96,11 @@
       <workItem from="1616277291832" duration="66000" />
       <workItem from="1616277370181" duration="1004000" />
       <workItem from="1616278562817" duration="144000" />
+      <workItem from="1616335591645" duration="1144000" />
+      <workItem from="1616355005735" duration="11000" />
+      <workItem from="1616355419399" duration="2082000" />
+      <workItem from="1616367969874" duration="70000" />
+      <workItem from="1616442634545" duration="1506000" />
     </task>
     <servers />
   </component>

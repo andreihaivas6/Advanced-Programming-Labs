@@ -1,3 +1,6 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.List;
 public class SaveCommand extends Command {
 
@@ -14,6 +17,15 @@ public class SaveCommand extends Command {
 
     @Override
     public void run(Catalog catalog) {
-        catalog.save(super.getArguments().get(0));
+        //-> avem try with resources -> inchide singur tot ce e closeable
+        // nu e necesar out.close();fileOut.close();
+
+        String path = getArguments().get(0);
+        try (FileOutputStream fileOut = new FileOutputStream(path);
+             ObjectOutputStream out = new ObjectOutputStream(fileOut);) {
+            out.writeObject(catalog);
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
     }
 }

@@ -28,6 +28,7 @@ public class Main {
 //        catalog2.list();
 
         // Optional
+
         Catalog catalog = new Catalog("myCatalog");
         Scanner scanner = new Scanner(System.in);
 
@@ -36,8 +37,8 @@ public class Main {
             // add Song numeSong C:\\users\\andre\\Desktop\\testSong.mp3 Ludovic
             // add Book numeBook C:\\users\\andre\\Desktop\\testBook.pdf Robert 2010
             // list
-            // save C:\\users\\andre\\Desktop\\catalog.ser
-            // load C:\\users\\andre\\Desktop\\catalog.ser
+            // save catalog.ser
+            // load catalog.ser
             // play numeSong
             // report
 
