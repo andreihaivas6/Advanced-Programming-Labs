@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5157a0a-762b-40da-a1a1-e271be1b8ddc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab5-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AddCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Catalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ListCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoadCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PlayCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SaveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Lab5-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Lab5-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AddCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AddCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Catalog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ListCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ListCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoadCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoadCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PlayCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PlayCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SaveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SaveCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +36,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab4" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -101,6 +84,8 @@
       <workItem from="1616355419399" duration="2082000" />
       <workItem from="1616367969874" duration="70000" />
       <workItem from="1616442634545" duration="1506000" />
+      <workItem from="1616491599768" duration="495000" />
+      <workItem from="1616597769601" duration="13000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Solution {
     private Problem problem;
@@ -57,6 +54,74 @@ public class Solution {
                             int index = acceptedList.get(school).indexOf(schoolPreference.get(j));
                             acceptedList.get(school).set(index, student);
                             break;
+                        }
+                    }
+                }
+            }
+        }
+
+        for (School school : acceptedList.keySet()) {
+            for (Student student : acceptedList.get(school)) {
+                result.put(student, school);
+            }
+        }
+    }
+
+    public void solveBonusPreferencesNotStrict() {
+        Map<School, List<Student>> acceptedList = new HashMap<>();
+        for (School school : problem.getSchoolsPreferences().keySet()) {
+            acceptedList.put(school, new ArrayList<>());
+        }
+
+        List<Student> freeStudents = new ArrayList<>(problem.getStudentsPreferences().keySet());
+        for (int i = 0; i < freeStudents.size(); ++i) {
+            Student student = freeStudents.get(i);
+            List <Integer> studentPriorityValues = problem.getStudentsPreferencesValues().get(student);
+
+            // cautam scoli pe nivele de prioritate
+            int minPriority = studentPriorityValues.get(0);
+            int maxPriority = studentPriorityValues.get(studentPriorityValues.size() - 1);
+
+            // luam toate prioritatile pe rand
+            for(int priority = minPriority; priority <= maxPriority; ++priority) {
+                int minIndex = studentPriorityValues.indexOf(priority);
+                int maxIndex = (priority == maxPriority) // indexul urmatoarului nivel de prioritate
+                        ? (studentPriorityValues.size()) : studentPriorityValues.indexOf(priority + 1);
+
+                // luam o scoala random dintre cele cu acelasi nivel de prioritate
+                int indexSchool = (int)(Math.random() * (maxIndex - minIndex)) + minIndex;
+                School school = problem.getStudentsPreferences().get(student).get(indexSchool);
+
+                if(!problem.getSchoolsPreferences().get(school).contains(student)) {
+                    continue; // trecem mai departe daca scoala nu vrea sa il primeasca pe student
+                }
+
+                if (acceptedList.get(school).size() < school.getCapacity()) { // daca mai e loc in scoala
+                    acceptedList.get(school).add(student);
+                    break;
+                } else { // daca lista scolii e deja plina
+                    // verificam daca studentul curent e mai bun decat cel mai slab din lista (si ii inlocuim)
+                    // la coada sunt cei mai slabi studenti
+
+                    List<Student> schoolPreference = problem.getSchoolsPreferences().get(school);
+                    for (int j = schoolPreference.size() - 1; j >= 0; --j) {
+                        Student student2 = schoolPreference.get(j);
+                        if (student2.equals(student)) { // cel mai slab e studentul pe care vrem sa il punem
+                            break;
+                        } else if (acceptedList.get(school).contains(student2)) {
+                            // studentul curent e inainte studentului deja pus in lista.
+                            // ca sa fie mai bun decat el trebuie sa aiba nivel de prioritate de o valoare mai mica
+                            List<Integer> schoolPriorityValues = problem.getSchoolsPreferencesValues().get(school);
+
+                            int priorityStudent1 = schoolPriorityValues.indexOf(schoolPreference.indexOf(student));
+                            int priorityStudent2 = schoolPriorityValues.indexOf(schoolPreference.indexOf(student2));
+
+                            if (priorityStudent1 < priorityStudent2) { // swap
+                                freeStudents.add(student2);
+                                int index = acceptedList.get(school).indexOf(student2);
+                                acceptedList.get(school).set(index, student);
+                                break;
+                            }
                         }
                     }
                 }

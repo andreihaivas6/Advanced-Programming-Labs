@@ -14,13 +14,13 @@ public class Main {
                 .toArray(School[]::new);
         schools[0].setCapacity(1);
 
-        Faker faker = new Faker();
-        for(Student student : students){
-            student.setName(faker.name().fullName());
-        }
-        for(School school : schools){
-            school.setName(faker.company().name() + " High School");
-        }
+//        Faker faker = new Faker();
+//        for(Student student : students){
+//            student.setName(faker.name().fullName());
+//        }
+//        for(School school : schools){
+//            school.setName(faker.company().name() + " High School");
+//        }
 
         List<Student> studentList = new LinkedList<>(Arrays.asList(students));
         studentList.sort(new Comparator<Student>() {
@@ -93,18 +93,55 @@ public class Main {
         solution.solve();
         System.out.println("\nMatching: " + solution);
 
+        // Bonus I
+
         Arrays.stream(schools).forEach(x -> x.setCapacity(2));
         schools[0].setCapacity(1);
 
         solution.solveBonus();
         System.out.println("\nStable matching: " + solution);
-        /*
-            Daca problema SAP ar fi cu legaturi ("ties") atunci va avea mai multe solutii,
-            deoarece exista licee ce au prioritate egala si unui student ii va putea fi atribuit oricare scoala.
 
-            Totusi, o anumita alegere a unui liceu pentru un student ar putea (sau nu) sa impiedice alt student
-            de a intra in acea scoala. Daca aceasta ultima scoala este singura alegere pentru al doilea student,
-            atunci vom avea solutii de dimensiuni diferite.
+        // Bonus II
+
+        Arrays.stream(schools).forEach(x -> x.setCapacity(2));
+        schools[0].setCapacity(1);
+
+        Map <Student, List<Integer>> studentsPreferencesValues = new HashMap<>();
+        studentsPreferencesValues.put(students[0], Arrays.asList(1, 2, 3));
+        studentsPreferencesValues.put(students[1], Arrays.asList(1, 2, 2)); // ==
+        studentsPreferencesValues.put(students[2], Arrays.asList(1, 2));
+        studentsPreferencesValues.put(students[3], Arrays.asList(1, 2));
+
+        Map <School, List<Integer>> schoolsPreferencesValues = new HashMap<>();
+        schoolsPreferencesValues.put(schools[0], Arrays.asList(1, 2, 3, 4));
+        schoolsPreferencesValues.put(schools[1], Arrays.asList(1, 2, 3));
+        schoolsPreferencesValues.put(schools[2], Arrays.asList(1, 2, 3));
+
+        problem = new Problem(studentsPreferences, studentsPreferencesValues,
+                schoolsPreferences, schoolsPreferencesValues);
+        solution = new Solution(problem);
+        solution.solveBonusPreferencesNotStrict();
+        System.out.println("\nMatching: " + solution);
+        /*
+        Observam ca dupa mai multe rulari putem obtine solutii diferite si de lungimi diferite.
+        Pe acest exemplu diferenta a fost facuta de prioritatatile studentului S1: H0, [H1, H2].
+            (H1 si H2 avand aceeasi prioritate)
+        In rularea 1: pentru S1 algoritmul a ales scoala H2 care era libera (care era libera si a putut face asignarea).
+        In rularea 2: pentru S1 algoritmul a ales scoala H1 care era deja plina si astfel S1 a ramas neasignat la scoala.
+        In concluzie, in cazul problemei SAP cu "ties" obtinem rezultate diferite si de lungimi diferite ca mai jos:
+        Rulare 1:
+            Matching: Solution{
+                Student{'S3', 9} = School{'H0'}
+                Student{'S0', 8} = School{'H1'}
+                Student{'S1', 10} = School{'H2'}
+                Student{'S2', 2} = School{'H1'}
+            }
+        Rulare 2:
+            Matching: Solution{
+                Student{'S3', 3} = School{'H0'}
+                Student{'S0', 7} = School{'H1'}
+                Student{'S2', 4} = School{'H1'}
+            }
          */
     }
 }
