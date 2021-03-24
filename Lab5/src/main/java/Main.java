@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-          // Compulsory
+        // Compulsory
 //
 //        Song songWithBatPath = new Song("song2", "C:\\cantec", "xx");
 //
@@ -32,6 +32,7 @@ public class Main {
         Catalog catalog = new Catalog("myCatalog");
         Scanner scanner = new Scanner(System.in);
 
+        boolean exit = false;
         do {
             System.out.print("Introdu comanda:\n---> ");
             // add Song numeSong C:\\users\\andre\\Desktop\\testSong.mp3 Ludovic
@@ -41,6 +42,7 @@ public class Main {
             // load catalog.ser
             // play numeSong
             // report
+            // info
 
             String line = scanner.nextLine();
             String[] result = line.split("\\s+");    /* \\s+ ->  ' '+ */
@@ -49,23 +51,38 @@ public class Main {
             List<String> arguments = new ArrayList<>(Arrays.asList(result));
             arguments.remove(0);
 
-            Command command;
+            Command command = null;
             switch (comanda) {
-                case "add"  : command = new AddCommand (arguments); break;
-                case "list" : command = new ListCommand(arguments); break;
-                case "play" : command = new PlayCommand(arguments); break;
-                case "save" : command = new SaveCommand(arguments); break;
-                case "load" : command = new LoadCommand(arguments); break;
-                case "report" : command = new ReportCommand(arguments); break;
-                default: throw new InvalidException("Comanda nu exista");
+                case "add"    -> command = new AddCommand(arguments);
+                case "list"   -> command = new ListCommand(arguments);
+                case "play"   -> command = new PlayCommand(arguments);
+                case "save"   -> command = new SaveCommand(arguments);
+                case "load"   -> command = new LoadCommand(arguments);
+                case "report" -> command = new ReportCommand(arguments);
+                case "info"   -> command = new InfoCommand(arguments); // Bonus I
+                case "exit"   -> exit = true;
+                default       -> throw new InvalidException("Comanda nu exista");
             }
+            if (exit) break;
 
             command.run(catalog);
             System.out.println("Comanda executata cu succes.");
 
-        } while(true);
-
+        } while (true);
         // mvn package
         // java -jar Lab5-1.0-SNAPSHOT.jar
+
+
+        // Bonus II
+        GraphBonus graph = new GraphBonus(catalog);
+        graph.createGraph();
+        graph.solve();
+        for(int[] line : graph.getMatriceAdiacenta()) {
+            System.out.println(Arrays.toString(line));
+        }
+        System.out.println(graph);
+        // Am testat grafuri mari in GraphBonusTest
     }
 }
+
+
