@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5157a0a-762b-40da-a1a1-e271be1b8ddc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphBonus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InfoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GraphBonusTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/GraphBonusTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +57,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.GraphBonusTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Lab5" />
@@ -91,8 +82,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GraphBonusTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.GraphBonusTest" />
       </list>
     </recent_temporary>
   </component>
@@ -127,6 +118,9 @@
       <workItem from="1616491599768" duration="495000" />
       <workItem from="1616597769601" duration="13000" />
       <workItem from="1616608008228" duration="13186000" />
+      <workItem from="1616630442742" duration="206000" />
+      <workItem from="1616659577928" duration="49000" />
+      <workItem from="1616665542898" duration="216000" />
     </task>
     <servers />
   </component>
