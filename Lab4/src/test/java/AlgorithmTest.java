@@ -22,6 +22,7 @@ public class AlgorithmTest {
         schPref.put(school1, Arrays.asList(student1));
         schPref.put(school2, Arrays.asList(student2));
 
+
         Problem problem = new Problem(studPref, schPref);
         Solution solution = new Solution(problem);
         solution.solve();

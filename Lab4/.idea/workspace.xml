@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a6bd708-6462-4611-99fa-6de51b2c84b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/java/ConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/java/ConfigPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab6/target/classes/ConfigPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/target/classes/ConfigPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab6/target/classes/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/target/classes/ControlPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AlgorithmTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -130,6 +127,7 @@
       <workItem from="1617098957577" duration="1000" />
       <workItem from="1617125545852" duration="24000" />
       <workItem from="1617218688894" duration="14000" />
+      <workItem from="1617379631851" duration="43000" />
     </task>
     <servers />
   </component>
