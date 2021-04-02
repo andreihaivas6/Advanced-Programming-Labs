@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5157a0a-762b-40da-a1a1-e271be1b8ddc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/Lab7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/src/main/java/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/src/main/java/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/src/main/java/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/java/ConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/java/ConfigPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/target/classes/ConfigPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/target/classes/ConfigPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/target/classes/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/target/classes/ControlPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +66,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Facultate\MATERII\An 2 Sem2\3. PA\Laboratoare\Lab5\src\main\java\commands" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GraphBonusTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Lab5" />
@@ -82,8 +102,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.GraphBonusTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -121,6 +141,11 @@
       <workItem from="1616630442742" duration="206000" />
       <workItem from="1616659577928" duration="49000" />
       <workItem from="1616665542898" duration="216000" />
+      <workItem from="1616767600982" duration="213000" />
+      <workItem from="1616767839378" duration="16000" />
+      <workItem from="1617018595742" duration="2263000" />
+      <workItem from="1617372392515" duration="345000" />
+      <workItem from="1617372912614" duration="334000" />
     </task>
     <servers />
   </component>

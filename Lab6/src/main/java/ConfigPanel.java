@@ -15,7 +15,7 @@ public class ConfigPanel extends JPanel {
 
     private void initialization() {
         sidesLabel = new JLabel("Number of sides");
-        sidesNumber = new JSpinner(new SpinnerNumberModel(5, 0, 100, 1));
+        sidesNumber = new JSpinner(new SpinnerNumberModel(5, 3, 100, 1));
 //        sidesNumber.setValue(5);
 
         Color[] colors = new Color[]{ Color.RED, Color.BLUE, Color.orange, Color.BLACK,
