@@ -4,9 +4,9 @@ import java.awt.*;
 public class ConfigPanel extends JPanel {
     private final MainFrame frame;
 
-    private JLabel    sidesLabel, dimensionLabel;
-    private JSpinner  sidesNumber, dimensionShape;
-    private JComboBox colorCombo; // set de culori
+    JLabel    sidesLabel,  dimensionLabel;
+    JSpinner  sidesNumber, dimensionShape;
+    JComboBox colorCombo; // set de culori
 
     public ConfigPanel(MainFrame frame) {
         this.frame = frame;
@@ -33,6 +33,8 @@ public class ConfigPanel extends JPanel {
         add(sidesLabel);
         add(sidesNumber);
         add(colorCombo);
+
+
     }
 
     public MainFrame getFrame() {

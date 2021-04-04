@@ -5,6 +5,7 @@ public class MainFrame extends JFrame{
     private ConfigPanel configPanel;
     private ControlPanel controlPanel;
     private DrawingPanel canvas;
+    private LeftPanel leftPanel;
 
     public MainFrame() {
         super("My drawing App");
@@ -18,11 +19,13 @@ public class MainFrame extends JFrame{
         configPanel = new ConfigPanel(this);
         controlPanel = new ControlPanel(this);
         canvas = new DrawingPanel(this);
+        leftPanel = new LeftPanel(this);
 
         // JFrame foloseste BorderLayout by default
         add(configPanel, BorderLayout.NORTH);
         add(controlPanel, BorderLayout.SOUTH);
         add(canvas, BorderLayout.CENTER);
+        add(leftPanel, BorderLayout.WEST);
 
         pack(); // invoke layout manager
     }
@@ -49,6 +52,14 @@ public class MainFrame extends JFrame{
 
     public void setCanvas(DrawingPanel canvas) {
         this.canvas = canvas;
+    }
+
+    public LeftPanel getLeftPanel() {
+        return leftPanel;
+    }
+
+    public void setLeftPanel(LeftPanel leftPanel) {
+        this.leftPanel = leftPanel;
     }
 }
 
