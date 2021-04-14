@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
 
 import static java.lang.Thread.sleep;
 
@@ -8,43 +10,21 @@ public class Game {
     private List<Player> players = new ArrayList<>();
 
     private final int matrixDim;
-    private final int numberTokens;
     private List<Token> availableTokens = new ArrayList<>();
 
-    public Game(int matrixDim, int numberTokens) {
+    public Game(int matrixDim) {
         turn = 0;
         this.matrixDim = matrixDim;
-        this.numberTokens = numberTokens;
         generateBoard();
     }
 
     private void generateBoard() {
-        if(numberTokens <= 0 || numberTokens > matrixDim * (matrixDim - 1) || matrixDim <= 0) {
-            throw new RuntimeException("Input naspa");
-        }
-
-        for(int i = 0; i < numberTokens; ++i) {
-            int ind1 = (int)(Math.random() * matrixDim) + 1;
-            int ind2 = (int)(Math.random() * matrixDim) + 1;
-            while (ind2 == ind1) { // sa nu avem token invalid
-                ind2 = (int)(Math.random() * matrixDim) + 1;
-            }
-            int value = (int)(Math.random() * 10) + 1;
-
-            // verificam sa nu existe deja tokenul
-            boolean exista = false;
-            Token token = new Token(ind1, ind2, value);
-            for (Token availableToken : availableTokens) {
-                if (token.equals(availableToken)) {
-                    exista = true;
-                    break;
-                }
-            }
-
-            if (!exista) {
-                availableTokens.add(token);
-            } else {
-                i--;
+        for(int i = 0; i < matrixDim; ++i) {
+            for(int j = 0; j < matrixDim; ++j) {
+                if(i == j)
+                    continue;
+                int value = (int)(Math.random() * 10) + 1;
+                availableTokens.add(new Token(i + 1, j + 1, value));
             }
         }
     }
@@ -54,13 +34,9 @@ public class Game {
     }
 
 
-    public synchronized Token getToken(int index) throws InterruptedException {
-        while (index != turn) { // isi asteapta randul
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+    public synchronized Token getTokenByRobot(Player player) throws InterruptedException {
+        while (player.getIndex() != turn) { // isi asteapta randul
+            wait();
         }
 
         if (availableTokens.size() == 0) {
@@ -68,16 +44,67 @@ public class Game {
             notifyAll();
             return null;
         }
-        sleep(500);
+//        sleep(500);
 
-        int indexTokenRandom = (int) (Math.random() * getAvailableTokens().size());
-        Token token = getAvailableTokens().get(indexTokenRandom);
-        availableTokens.remove(token);
+        Token chosenToken;
+        if(!player.getHasSequenceStarted()) { // daca nu a inceput o secventa noua, alegem un token random
+            int indexTokenRandom = (int) (Math.random() * getAvailableTokens().size());
+            chosenToken = getAvailableTokens().get(indexTokenRandom);
+
+            player.setHasSequenceStarted(true);
+            player.setFirstIndexFromSequence(chosenToken.getIndex1());
+
+        } else { // daca are o secventa inceputa, alegem un token care sa continue ultimul token extras
+            Token lastToken = player.getSelectedTokens().get(player.getSelectedTokens().size() - 1);
+            int index = lastToken.getIndex2();
+
+            List<Token> possibleTokens = availableTokens
+                    .stream()
+                    .filter(token -> index == token.getIndex1())
+                    .collect(Collectors.toList());
+
+            if(possibleTokens.size() != 0) { // daca mai sunt tokenuri disponibile care sa respecte conditia
+                chosenToken = possibleTokens.get((int) (Math.random() * possibleTokens.size()));
+            } else {
+                chosenToken = availableTokens.get((int) (Math.random() * getAvailableTokens().size()));
+                player.setHasSequenceStarted(false);
+            }
+        }
 
         turn = (turn + 1) % players.size(); // urmatorul jucator
         notifyAll();
 
-        return token;
+        availableTokens.remove(chosenToken);
+        return chosenToken;
+    }
+
+    public synchronized Token getTokenByHuman(Player player) throws InterruptedException {
+        while(player.getIndex() != turn) {
+            wait();
+        }
+        System.out.println(availableTokens);
+        Scanner scanner = new Scanner(System.in);
+
+        int i, j;
+        do {
+            if(availableTokens.size() == 0)
+                return null;
+            System.out.print("Introdu indicii tokenului ales\n--->");
+            i = scanner.nextInt();
+            System.out.print("--->");
+            j = scanner.nextInt();
+        }while(!availableTokens.contains(new Token(i, j, 0)));  // nu conteaza valoarea in equals()
+
+        turn = (turn + 1) % players.size(); // urmatorul jucator
+        notifyAll();
+
+        for(Token token : availableTokens) {
+            if(token.getIndex1() == i && token.getIndex2() == j) {
+                availableTokens.remove(token);
+                return token;
+            }
+        }
+        return null;
     }
 
 
