@@ -1,3 +1,2 @@
- * lab4: bonus
- * lab6: optional
- * lab7: compulsory
+ * lab7: optional
+ * lab8: 
