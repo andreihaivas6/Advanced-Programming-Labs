@@ -1,2 +1,2 @@
  * lab7: optional
- * lab8: 
+ * lab8: compulsory
