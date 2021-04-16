@@ -6,6 +6,8 @@ public class DatabaseConnection {
 
     private static Connection connection;
 
+    private DatabaseConnection() {} // !!!
+
     public static Connection makeConnection() throws SQLException {
         if(connection == null){
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/lab8","root","");

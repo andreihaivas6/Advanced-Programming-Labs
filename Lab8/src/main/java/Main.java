@@ -2,6 +2,8 @@ import java.sql.*;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
+//        DatabaseConnection db = new DatabaseConnection(); // -> nu se permite instantierea
+
         GenreDAO genreDAO = new GenreDAO();
         MovieDAO movieDAO = new MovieDAO();
         movieGenreDAO movieGenreDAO = new movieGenreDAO();
