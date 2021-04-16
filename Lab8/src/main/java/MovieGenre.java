@@ -1,4 +1,4 @@
-public class movieGenre {
+public class MovieGenre {
     private int idFilm;
     private int idGen;
 

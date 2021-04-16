@@ -1,10 +1,10 @@
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class movieGenreDAO {
+public class MovieGenreDAO {
     private Connection conn = DatabaseConnection.makeConnection();
 
-    public movieGenreDAO() throws SQLException { }
+    public MovieGenreDAO() throws SQLException { }
 
 
 }

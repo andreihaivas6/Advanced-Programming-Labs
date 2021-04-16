@@ -6,7 +6,7 @@ public class Main {
 
         GenreDAO genreDAO = new GenreDAO();
         MovieDAO movieDAO = new MovieDAO();
-        movieGenreDAO movieGenreDAO = new movieGenreDAO();
+        MovieGenreDAO movieGenreDAO = new MovieGenreDAO();
 
 //        movieDAO.insert(3, "film3", new Date(2003, 3, 3), 200, 5);
 //        genreDAO.insert(3, "Comedie");
