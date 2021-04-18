@@ -146,6 +146,26 @@ public class DrawingPanel extends JPanel implements MouseListener, ActionListene
         }
     }
 
+    public void submitCommand(String type, String shapeName, int x, int y, int raza, int nrLaturi) {
+        Color culoare = (Color) frame.getConfigPanel().getColorCombo().getSelectedItem();
+        graphics.setColor(culoare);
+
+        if(shapeName.equals("circle")) {
+            if(type.equals("fill")) {
+                graphics.fill(new Circle(x, y, raza));
+            } else {
+                graphics.draw(new Circle(x, y, raza));
+            }
+        } else {
+            if(type.equals("fill")) {
+                graphics.fill(new RegularPolygon(x, y, raza, nrLaturi));
+            } else {
+                graphics.draw(new RegularPolygon(x, y, raza, nrLaturi));
+            }
+        }
+        repaint();
+    }
+
     @Override
     public void update(Graphics g) {
     }
