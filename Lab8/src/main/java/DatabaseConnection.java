@@ -10,7 +10,7 @@ public class DatabaseConnection {
 
     public static Connection makeConnection() throws SQLException {
         if(connection == null){
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/lab8","root","");
+            connection = DriverManager.getConnection("jdbc:mariadb://localhost:3306/lab8","root","");
         }
         return connection;
     }

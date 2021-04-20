@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5157a0a-762b-40da-a1a1-e271be1b8ddc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/catalog.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/scriptSQL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/src/main/java/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/src/main/java/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/src/main/java/ExportAsHTML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/src/main/java/Import.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/src/main/java/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/src/main/java/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/.idea/dataSources/cdb0108e-ce7c-49f0-a9af-7df92fa45051.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/.idea/dataSources/cdb0108e-ce7c-49f0-a9af-7df92fa45051.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/src/main/java/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/src/main/java/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/src/main/java/MovieGenreDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/src/main/java/MovieGenreDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/target/classes/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/target/classes/DatabaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/target/classes/movieGenreDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/target/classes/movieGenreDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +68,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab8" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -131,6 +149,8 @@
       <workItem from="1617372392515" duration="345000" />
       <workItem from="1617372912614" duration="334000" />
       <workItem from="1618508142486" duration="93000" />
+      <workItem from="1618955826034" duration="1613000" />
+      <workItem from="1618958960088" duration="14000" />
     </task>
     <servers />
   </component>

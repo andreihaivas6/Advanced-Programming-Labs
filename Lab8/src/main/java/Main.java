@@ -1,18 +1,17 @@
+import freemarker.template.TemplateException;
+
+import java.io.IOException;
 import java.sql.*;
+import java.text.ParseException;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, IOException, ParseException, TemplateException {
 //        DatabaseConnection db = new DatabaseConnection(); // -> nu se permite instantierea
 
-        GenreDAO genreDAO = new GenreDAO();
-        MovieDAO movieDAO = new MovieDAO();
-        MovieGenreDAO movieGenreDAO = new MovieGenreDAO();
+        Import myImport = new Import();
+//        myImport.importAll();
 
-//        movieDAO.insert(3, "film3", new Date(2003, 3, 3), 200, 5);
-//        genreDAO.insert(3, "Comedie");
-        System.out.println(movieDAO.selectId(1));
-        System.out.println(movieDAO.selectTitle("film2"));
-        System.out.println(genreDAO.selectId(1));
-        System.out.println(genreDAO.selectName("Action"));
+        ExportAsHTML myExport = new ExportAsHTML();
+        myExport.exportAll();
     }
 }

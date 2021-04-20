@@ -1,0 +1,31 @@
+# use lab8;
+
+DROP TABLE MOVIES;
+DROP TABLE GENRES;
+DROP TABLE TIP_FILME;
+DROP TABLE PERSONS;
+
+CREATE TABLE MOVIES(
+    id INT PRIMARY KEY,
+    title VARCHAR(500),
+    release_date DATE,
+    duration INT,
+    score INT
+);
+
+CREATE TABLE GENRES(
+    id INT ,
+    name VARCHAR(500) PRIMARY KEY
+);
+
+CREATE TABLE TIP_FILME (
+    id_film INT,
+    id_gen INT
+);
+
+CREATE TABLE Persons (
+    id INT PRIMARY KEY,
+    nume VARCHAR(500),
+    prenume VARCHAR(500),
+    discriminant INT NOT NULL
+);
