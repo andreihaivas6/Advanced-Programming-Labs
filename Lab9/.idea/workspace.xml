@@ -37,7 +37,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab8" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.15517241" />
@@ -78,6 +78,7 @@
       <workItem from="1619180585250" duration="64000" />
       <workItem from="1619180936246" duration="81000" />
       <workItem from="1619181227030" duration="25000" />
+      <workItem from="1619185624629" duration="389000" />
     </task>
     <servers />
   </component>
