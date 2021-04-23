@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Player implements Runnable {
@@ -55,8 +56,40 @@ public class Player implements Runnable {
                 score += token.getValue();
             }
         }
-        System.out.println(name + " are scorul: " + score);
+        System.out.println("Scor calculat cu suma tuturor tokenurilor din secvente valide\n" + name + " are scorul: " + score);
         this.score = score;
+    }
+
+    public void computeScoreHamiltonian() {
+        int score = 0;
+        for(var list : sequences) {
+            if(isHamiltonianCircuit(list)) {
+                for(Token token : list) {
+                    score += token.getValue();
+                }
+            }
+        }
+        System.out.println("Scor calculat cu suma tuturor tokenurilor din secvente ce sunt circuite hamiltoniene\n" + name + " are scorul: " + score);
+        this.score = score;
+    }
+
+    public Boolean isHamiltonianCircuit(List<Token> list) {
+        if(list.size() != game.getMatrixDim()) { // daca nu are lungimea egala cu nr de noduri
+            return false;
+        }
+
+        // daca e format din n noduri, trebuie sa treaca o singura data prin fiecare nod
+        System.out.println(game.getMatrixDim());
+        Boolean[] nodes = new Boolean[game.getMatrixDim() + 1];
+        Arrays.fill(nodes, false);
+
+        for(Token token : list) {
+            if(nodes[token.getIndex1()]) {
+                return false;
+            }
+            nodes[token.getIndex1()] = true;
+        }
+        return true;
     }
 
     public int getIndex() {

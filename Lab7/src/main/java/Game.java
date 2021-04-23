@@ -224,4 +224,8 @@ public class Game {
     public void setAvailableTokens(List<Token> availableTokens) {
         this.availableTokens = availableTokens;
     }
+
+    public int getMatrixDim() {
+        return matrixDim;
+    }
 }
