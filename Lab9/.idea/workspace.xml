@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ec4126a-a39e-4fe7-8e5d-f38d006549a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab9.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MovieManagerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MovieRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tables/MoviesEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab7/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/src/main/java/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab7/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab7/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab7/target/classes/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/target/classes/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab7/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab7/target/classes/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/target/classes/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab8/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8/target/classes/Main.class" afterDir="false" />
-    </list>
+    <list default="true" id="5ec4126a-a39e-4fe7-8e5d-f38d006549a8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +37,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Laborator9" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab7" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.15517241" />
@@ -96,6 +77,7 @@
       <workItem from="1619180376100" duration="162000" />
       <workItem from="1619180585250" duration="64000" />
       <workItem from="1619180936246" duration="81000" />
+      <workItem from="1619181227030" duration="25000" />
     </task>
     <servers />
   </component>
