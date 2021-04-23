@@ -10,6 +10,7 @@ public class Player implements Runnable {
 
     private boolean hasSequenceStarted;
     private int firstIndexFromSequence = -1;
+    private int score;
 
     public Player(int index, String name, Game game) {
         this.index = index;
@@ -23,7 +24,7 @@ public class Player implements Runnable {
         while (game.getAvailableTokens().size() != 0) { // cat timp mai sunt tokenuri disponibile
             Token token = null;
             try {
-                token = game.getTokenByRobot(this);
+                token = game.getTokenByRobotSmart(this);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -47,14 +48,15 @@ public class Player implements Runnable {
         selectedTokens.clear();
     }
 
-    public int computeScore() {
+    public void computeScoreNormal() {
         int score = 0;
         for(var list : sequences) { // avem doar secventele valide memorate
             for(Token token : list) {
                 score += token.getValue();
             }
         }
-        return score;
+        System.out.println(name + " are scorul: " + score);
+        this.score = score;
     }
 
     public int getIndex() {
@@ -99,6 +101,14 @@ public class Player implements Runnable {
 
     public void setSequences(List<List<Token>> sequences) {
         this.sequences = sequences;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 
     @Override
