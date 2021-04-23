@@ -23,7 +23,7 @@ public class Main {
 
         System.out.println(player1.getSequences());
         System.out.println(player2.getSequences());
-        player1.computeScoreHamiltonian();
+        player1.computeScoreNormal();
         player2.computeScoreNormal();
 
         timeKeeper.setGameIsOver(true);

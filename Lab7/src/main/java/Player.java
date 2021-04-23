@@ -79,7 +79,6 @@ public class Player implements Runnable {
         }
 
         // daca e format din n noduri, trebuie sa treaca o singura data prin fiecare nod
-        System.out.println(game.getMatrixDim());
         Boolean[] nodes = new Boolean[game.getMatrixDim() + 1];
         Arrays.fill(nodes, false);
 
