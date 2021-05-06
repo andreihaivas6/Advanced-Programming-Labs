@@ -11,7 +11,10 @@
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" qname="lab9" />
+          <node kind="schema">
+            <name qname="lab8" />
+            <name qname="lab9" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>

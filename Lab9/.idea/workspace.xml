@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ec4126a-a39e-4fe7-8e5d-f38d006549a8" name="Default Changelist" comment="" />
+    <list default="true" id="5ec4126a-a39e-4fe7-8e5d-f38d006549a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Chart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/daos/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/daos/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/daos/MovieDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factories/AbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factories/DAOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factories/RepositoryFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/AbstractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/MovieRepositoryFromAbstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94041f7d-bdcb-42d2-b17a-4823e8d735b6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/94041f7d-bdcb-42d2-b17a-4823e8d735b6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MovieManagerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/MovieManagerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MovieManagerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MovieRepository.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,26 +60,45 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="94041f7d-bdcb-42d2-b17a-4823e8d735b6" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/daos" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.15517241" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Facultate\MATERII\An 2 Sem2\3. PA\Laboratoare\Lab9\src\main\java\daos" />
+      <recent name="D:\Facultate\MATERII\An 2 Sem2\3. PA\Laboratoare\Lab9\src\main\java\repository" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Facultate\MATERII\An 2 Sem2\3. PA\Laboratoare\Lab9\src\main\resources" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="tables" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="daos" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Lab9" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,6 +124,8 @@
       <workItem from="1619180936246" duration="81000" />
       <workItem from="1619181227030" duration="25000" />
       <workItem from="1619185624629" duration="389000" />
+      <workItem from="1620249931628" duration="2022000" />
+      <workItem from="1620302445690" duration="7066000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a6bd708-6462-4611-99fa-6de51b2c84b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab9/src/main/java/Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/.idea/dataSources/94041f7d-bdcb-42d2-b17a-4823e8d735b6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/.idea/dataSources/94041f7d-bdcb-42d2-b17a-4823e8d735b6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +140,7 @@
       <workItem from="1618434863911" duration="685000" />
       <workItem from="1618507912638" duration="199000" />
       <workItem from="1618508128038" duration="10000" />
+      <workItem from="1620317284940" duration="6000" />
     </task>
     <servers />
   </component>
