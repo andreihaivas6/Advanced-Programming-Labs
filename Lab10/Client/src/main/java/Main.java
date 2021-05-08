@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
@@ -9,9 +10,10 @@ import java.util.Scanner;
 public class Main {
     public static void main (String[] args) throws IOException {
         String serverAddress = "127.0.0.1"; // The server's IP address
-        int PORT = 8888; // The server's port
+        int port = 8888; // The server's port
         try (
-                Socket socket = new Socket(serverAddress, PORT);
+                Socket socket = new Socket(serverAddress, port);
+
                 PrintWriter out =
                         new PrintWriter(socket.getOutputStream(), true);
                 BufferedReader in = new BufferedReader (
@@ -30,7 +32,7 @@ public class Main {
                     break;
                 }
             }
-        } catch (UnknownHostException e) {
+        } catch (Exception e) {
             System.err.println("No server listening... " + e);
         }
     }

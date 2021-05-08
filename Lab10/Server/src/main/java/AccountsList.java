@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 public class AccountsList {
     private ArrayList<Account> accounts = new ArrayList<>();
+    private Boolean stop = false;
 
     public void addAccount(Account account){
         accounts.add(account);
@@ -58,6 +59,12 @@ public class AccountsList {
         return null;
     }
 
+    public long getLoggedInAccountsSize() {
+        return accounts.stream()
+                .filter(Account::getLoggedIn)
+                .count();
+    }
+
     public ArrayList<Account> getAccounts() {
         return accounts;
     }
@@ -66,5 +73,11 @@ public class AccountsList {
         this.accounts = accounts;
     }
 
+    public Boolean getStop() {
+        return stop;
+    }
 
+    public void setStop(Boolean stop) {
+        this.stop = stop;
+    }
 }

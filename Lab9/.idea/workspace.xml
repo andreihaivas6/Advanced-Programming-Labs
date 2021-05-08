@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ec4126a-a39e-4fe7-8e5d-f38d006549a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bonus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestBonus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/TestBonus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-    </list>
+    <list default="true" id="5ec4126a-a39e-4fe7-8e5d-f38d006549a8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +109,7 @@
       <workItem from="1619181227030" duration="25000" />
       <workItem from="1619185624629" duration="389000" />
       <workItem from="1620249931628" duration="2022000" />
-      <workItem from="1620302445690" duration="15769000" />
+      <workItem from="1620302445690" duration="16054000" />
     </task>
     <servers />
   </component>

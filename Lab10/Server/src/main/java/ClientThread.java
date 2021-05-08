@@ -1,7 +1,6 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.awt.*;
+import java.io.*;
+import java.net.InetSocketAddress;
 import java.net.Socket;
 
 class ClientThread extends Thread {
@@ -28,7 +27,8 @@ class ClientThread extends Thread {
                 if(response.equals("Bye!")) {
                     break;
                 } else if (response.equals("Server stopped.")) {
-                    System.exit(1);
+                    accountsList.setStop(true);
+//                    System.exit(1);
                 }
             }
         } catch (IOException e) {
@@ -42,7 +42,10 @@ class ClientThread extends Thread {
         }
     }
 
-    public String getResponse(String request) {
+    public String getResponse(String request) throws IOException {
+        if(accountsList.getStop()) {
+            return exit();
+        }
         String[] arguments = request.split(" +");
         String command = arguments[0];
         return switch (command) {
@@ -53,6 +56,7 @@ class ClientThread extends Thread {
             case "read"     -> read();
             case "exit"     -> exit();
             case "stop"     -> stop1();
+            case "data"     -> data();
             default         -> "Wrong command";
         };
     }
@@ -113,5 +117,11 @@ class ClientThread extends Thread {
 
     private String stop1() {
         return "Server stopped.";
+    }
+
+    private String data() throws IOException {
+        new Data(accountsList);
+        Desktop.getDesktop().open(new File("data.html"));
+        return "Statistics created.";
     }
 }
