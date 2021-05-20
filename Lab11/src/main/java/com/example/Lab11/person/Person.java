@@ -18,18 +18,25 @@ public class Person {
     private Long id;
     private String firstName;
     private String lastName;
+    private Integer numberOfRelationships;
 
     public Person() { }
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.numberOfRelationships = 0;
     }
 
     public Person(Long id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.numberOfRelationships = 0;
+    }
+
+    public void increaseNumberOfRelationships() {
+        numberOfRelationships++;
     }
 
     public Long getId() {
@@ -54,5 +61,23 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public Integer getNumberOfRelationships() {
+        return numberOfRelationships;
+    }
+
+    public void setNumberOfRelationships(Integer numberOfRelationships) {
+        this.numberOfRelationships = numberOfRelationships;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", numberOfRelationships=" + numberOfRelationships +
+                '}';
     }
 }

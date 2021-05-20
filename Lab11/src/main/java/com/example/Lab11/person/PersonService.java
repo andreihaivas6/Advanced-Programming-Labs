@@ -2,6 +2,7 @@ package com.example.Lab11.person;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import javax.transaction.Transactional;
 import java.util.List;
@@ -39,13 +40,16 @@ public class PersonService {
         Person person = personRepository.findById(personId)
                 .orElseThrow(() -> new IllegalStateException("Person doesn't exist"));
 
-        System.out.println("Aici1");
         if(firstName != null) {
-            System.out.println("Aici2");
             person.setFirstName(firstName);
         }
         if(lastName != null) {
             person.setLastName(lastName);
         }
+    }
+
+    @ExceptionHandler
+    public String handleIllegalStateException(IllegalStateException exception) {
+        return exception.getMessage();
     }
 }

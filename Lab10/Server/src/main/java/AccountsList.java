@@ -43,7 +43,7 @@ public class AccountsList {
 
     public Account getAccountByName(String name) {
         for(Account account : accounts) {
-            if(account.getName().equals(name)) {
+            if(account.getName() != null && account.getName().equals(name)) {
                 return account;
             }
         }

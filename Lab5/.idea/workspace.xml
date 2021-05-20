@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5157a0a-762b-40da-a1a1-e271be1b8ddc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab10/Server/data.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab10/Server/histogram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Client/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Client/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Client/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Client/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/Server/data.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/data.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab10/Server/src/main/java/AccountsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/AccountsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/src/main/java/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab10/Server/target/classes/AccountsList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/target/classes/AccountsList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/target/classes/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -151,6 +143,8 @@
       <workItem from="1620317294464" duration="3000" />
       <workItem from="1620341436584" duration="430000" />
       <workItem from="1620506314856" duration="151000" />
+      <workItem from="1621176582132" duration="37000" />
+      <workItem from="1621202823277" duration="34000" />
     </task>
     <servers />
   </component>
