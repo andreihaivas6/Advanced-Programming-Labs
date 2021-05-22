@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5157a0a-762b-40da-a1a1-e271be1b8ddc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/data.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/data.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/src/main/java/AccountsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/AccountsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/target/classes/AccountsList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/target/classes/AccountsList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/Lab12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/src/main/java/Helper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/src/main/java/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab12/src/main/java/TestLab.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +151,9 @@
       <workItem from="1620506314856" duration="151000" />
       <workItem from="1621176582132" duration="37000" />
       <workItem from="1621202823277" duration="34000" />
+      <workItem from="1621602726311" duration="14000" />
+      <workItem from="1621602799721" duration="3000" />
+      <workItem from="1621602964695" duration="1000" />
     </task>
     <servers />
   </component>
