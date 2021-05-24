@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,5 +55,13 @@ public class RelationshipService {
     @ExceptionHandler
     public String handleIllegalStateException(IllegalStateException exception) {
         return exception.getMessage();
+    }
+
+    public List<Person> getMostImportant() {
+        List<Person> persons = relationshipRepository.getPersons();
+        List<Relationship> relationships = getRelationships();
+
+        SolutionMostImportant solutionMostImportant = new SolutionMostImportant(persons.size(), relationships);
+        return solutionMostImportant.gasestePunti(relationshipRepository);
     }
 }

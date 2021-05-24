@@ -15,4 +15,7 @@ public interface RelationshipRepository extends JpaRepository<Relationship, Long
 
     @Query("SELECT p FROM Person p ORDER BY p.numberOfRelationships DESC")
     List<Person> getMostConnectedPersons();
+
+    @Query("SELECT p FROM Person p")
+    List<Person> getPersons();
 }
