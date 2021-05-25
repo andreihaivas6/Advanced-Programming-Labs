@@ -1,5 +1,6 @@
 import java.beans.JavaBean;
 import java.io.File;
+import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -115,15 +116,27 @@ public class Helper {
         }
     }
 
-    public static void readAllFiledFromFolder(File folder, String path) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        for (File fileEntry : folder.listFiles()) {
-            if (fileEntry.isDirectory()) {
-                readAllFiledFromFolder(fileEntry, path + "/" + fileEntry.getName());
-            } else if(fileEntry.getName().endsWith(".java")){
-                String fullPath = path + "/" + fileEntry.getName();
+    public static void readAllFilesFromFolder(File folder, String path) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+        for (File file : folder.listFiles()) {
+            if (file.isDirectory()) {
+                readAllFilesFromFolder(file, path + "/" + file.getName());
+            } else if(file.getName().endsWith(".java")){
+                String fullPath = path + "/" + file.getName();
                 fullPath = fullPath.substring(0, fullPath.length() - 5);
                 getInfoOfClass(fullPath);
             }
         }
     }
+
+//    public static void readAllFilesForBonus(File folder, String path) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, IOException {
+//        for (File file : folder.listFiles()) {
+//            if (file.isDirectory()) {
+//                readAllFilesForBonus(file, path + "/" + file.getName());
+//            } else if(file.getName().endsWith(".java")){
+//                String fullPath = path + "/" + file.getName();
+//                Runtime.getRuntime().exec("javac " + fullPath);
+//                System.out.println("javac " + fullPath);
+//            }
+//        }
+//    }
 }
