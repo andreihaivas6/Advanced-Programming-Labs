@@ -2,6 +2,8 @@ import java.awt.*;
 import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.util.HashMap;
+import java.util.Map;
 
 class ClientThread extends Thread {
     private AccountsList accountsList;
@@ -11,6 +13,7 @@ class ClientThread extends Thread {
         this.socket = socket ;
         this.accountsList = accountsList;
     }
+
 
     public void run () {
         try {
@@ -57,6 +60,7 @@ class ClientThread extends Thread {
             case "exit"     -> exit();
             case "stop"     -> stop1();
             case "data"     -> data();
+            case "cohesion" -> cohesion();
             default         -> "Wrong command";
         };
     }
@@ -123,5 +127,18 @@ class ClientThread extends Thread {
         new Data(accountsList);
         Desktop.getDesktop().open(new File("data.html"));
         return "Statistics created.";
+    }
+
+    private String cohesion() {
+        int numberConnectedAccounts = 0;
+        Map<Account, Integer> connectedAccounts = new HashMap<>();
+        for(Account account : accountsList.getAccounts()) {
+            if(account.getLoggedIn() && !connectedAccounts.containsKey(account)) {
+                connectedAccounts.put(account, numberConnectedAccounts++);
+            }
+        }
+        StructuralCohesion structuralCohesion
+                = new StructuralCohesion(numberConnectedAccounts, connectedAccounts, accountsList);
+        return "Structural cohesion: " + structuralCohesion.solve().toString();
     }
 }

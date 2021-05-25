@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a6bd708-6462-4611-99fa-6de51b2c84b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/data.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/data.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/src/main/java/AccountsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/AccountsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/target/classes/AccountsList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/target/classes/AccountsList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/StructuralCohesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/Server/src/main/java/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/ClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +136,7 @@
       <workItem from="1618508128038" duration="10000" />
       <workItem from="1620317284940" duration="6000" />
       <workItem from="1621176539381" duration="39000" />
+      <workItem from="1621945764777" duration="10000" />
     </task>
     <servers />
   </component>
