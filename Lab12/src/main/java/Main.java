@@ -16,8 +16,6 @@ public class Main {
 //        Helper.readAllFilesFromFolder(new File(pathFolder), pathFolder);
 
         readAllFilesForBonus(new File(pathFolder), pathFolder);
-
-
     }
 
     public static void readAllFilesForBonus(File folder, String path) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, IOException {
