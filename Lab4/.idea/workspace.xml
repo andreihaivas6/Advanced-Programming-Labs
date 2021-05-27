@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a6bd708-6462-4611-99fa-6de51b2c84b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/StructuralCohesion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/src/main/java/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -137,6 +136,8 @@
       <workItem from="1620317284940" duration="6000" />
       <workItem from="1621176539381" duration="39000" />
       <workItem from="1621945764777" duration="10000" />
+      <workItem from="1622054747991" duration="178000" />
+      <workItem from="1622054962294" duration="56000" />
     </task>
     <servers />
   </component>

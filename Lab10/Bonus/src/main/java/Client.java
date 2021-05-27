@@ -2,19 +2,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.InetSocketAddress;
 import java.net.Socket;
-import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class Main {
-
-    // dani1 --- dani2
-    //   |
-    // dani3
-    // => cohesion = 1
-
-    public static void main (String[] args) throws IOException {
+public class Client {
+    public static String run() throws IOException {
         String serverAddress = "127.0.0.1"; // The server's IP address
         int port = 8888; // The server's port
         try (
@@ -26,7 +18,7 @@ public class Main {
                         new InputStreamReader(socket.getInputStream()))
         ) {
             // Send a request to the server
-            while(true) {
+//            while(true) {
                 System.out.print("Introdu comanda.\n---> ");
                 Scanner scan = new Scanner(System.in);
                 String request = scan.nextLine();
@@ -34,12 +26,14 @@ public class Main {
 
                 String response = in.readLine();
                 System.out.println(response);
-                if(response.equals("Bye!") || response.equals("Server stopped.")) {
-                    break;
+                if(response.equals("Bye!") || response.equals("Server stopped.")) {;
+//                    break;
+                    return "Bye!";
                 }
-            }
+//            }
         } catch (Exception e) {
-            System.err.println("No server listening... " + e);
+            Main.serverId = -1;
         }
+        return "";
     }
 }

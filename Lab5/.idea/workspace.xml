@@ -5,10 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5157a0a-762b-40da-a1a1-e271be1b8ddc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/StructuralCohesion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/Bonus-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/Bonus.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/src/main/java/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/src/main/java/AccountsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/src/main/java/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/src/main/java/ClientThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/src/main/java/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/src/main/java/StructuralCohesion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/Bonus-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/classes/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/classes/AccountsList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/classes/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/classes/ClientThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/classes/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/classes/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/classes/StructuralCohesion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab10/Bonus/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/Client/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Client/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab10/Server/data.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/data.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/src/main/java/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/src/main/java/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Server/target/classes/ClientThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -149,6 +175,8 @@
       <workItem from="1621602799721" duration="3000" />
       <workItem from="1621602964695" duration="1000" />
       <workItem from="1621945779219" duration="1022000" />
+      <workItem from="1622054931635" duration="28000" />
+      <workItem from="1622128354433" duration="725000" />
     </task>
     <servers />
   </component>
